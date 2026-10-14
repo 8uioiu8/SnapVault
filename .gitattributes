@@ -1,0 +1,10 @@
+# 统一换行符，避免 Windows 上每次提交都显示"整个文件都被改了"。
+# 源码用 LF；.bat 必须是 CRLF（cmd.exe 对 LF-only 的批处理会出各种怪问题）。
+* text=auto eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# 二进制，别做任何转换和 diff
+*.ttf binary
+*.ico binary
+*.png binary
